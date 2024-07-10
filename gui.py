@@ -1,8 +1,9 @@
-from classes import Order, Pizza, Burger, Payment, Order_list
+# UI for the food truck 
+
 import tkinter as tk
 from tkinter import *
 
-""" This is a simple GUI application that allows the user to manage a food truck. """
+from classes import Order, Payment, Pizza, Burger, Order_list
 
 root = tk.Tk()
 root.title("Food Truck")
@@ -66,6 +67,7 @@ def create_order():
     
     submit_button = tk.Button(order_window, text="Submit", width=20, height=2, command=submit_order)
     submit_button.pack(pady=10)   
+
 
 
 # Function to register payment and update the Counter
@@ -142,6 +144,7 @@ def edit_orders():
     canvas.configure(yscrollcommand=scrollbar.set)
     canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox('all')))
 
+    # Creating a frame inside the canvas
     frame = tk.Frame(canvas)
     canvas.create_window((0, 0), window=frame, anchor='nw')
 

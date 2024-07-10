@@ -9,7 +9,6 @@ This project is a simple order management system for a food truck, developed usi
 * Order Management: View and manage the list of current orders.
 
 
-
 ### 📖 Getting Started 
 _________
 
